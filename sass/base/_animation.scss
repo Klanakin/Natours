@@ -1,0 +1,81 @@
+@keyframes moveInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    55% { transform: translate(+2%); }
+    75% { transform: translate(-1%); }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInFromRight {
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    55% { transform: translate(-1%); }
+    75% { transform: translate(+2%); }
+    0% {
+        opacity: 0;
+        transform: translate(10rem);
+    }
+}
+
+@keyframes moveInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+
+    50% {
+        opacity: .5;
+        transform: translate(0);
+    }
+
+    50% {
+        opacity: .5;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+    
+}
+
+@keyframes btnFadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+#aura { animation: aura 5s infinite; }
+@keyframes aura {
+    
+    0% {
+        text-shadow: 0 .2rem .5rem rgba(255, 255, 0, 0.4);
+    }
+
+    50% {
+        text-shadow: 0 .2rem .5rem rgba(255, 255, 0, 0);
+    }
+
+    100% {
+        text-shadow: 0 .2rem .5rem rgba(255, 255, 0, 0.4);
+    }
+}

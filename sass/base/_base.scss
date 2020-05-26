@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    background-color: $color-secondary;
+    box-sizing: border-box; 
+}
+
+html {
+    // defining the root element for font size measurement (rem unit)
+    font-size: 62.5%;
+}

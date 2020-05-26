@@ -1,0 +1,100 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    background-image:
+        /* linear-gradient(
+            225deg,
+            rgba(0, 0, 0, 0), 
+            rgba(0, 0, 0, 0.466)), */
+        linear-gradient(
+            45deg, 
+            rgba(7, 27, 21, 0.384), 
+            rgba(251, 255, 0, 0.281)
+        ), 
+        url(../img/hero.jpg);
+
+    background-size: cover;
+    background-position: top;
+
+    // clip-path: polygon(0 0, 100% 0, 100% 80%, 0 90%);
+
+    /* clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 90% 80%, 78% 83%, 14% 84%, 0% 82%); */
+    /* clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 90%, 0 95%); */
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 50.1% 97%, 50% 75%, 49.9% 97%, 0 100%); */
+    /* clip-path: polygon(
+        0 0, 10% 2%, 30% 4%, 50% 5%, 70% 4%, 90% 2%, 100% 0,
+        100% 100%,
+        90% 98%, 70% 96%, 50% 95%, 30% 96%, 10% 98%, 0 100%); */
+    height: 95vh;
+    padding: 2.5rem;
+
+    .navbar {
+        /* border: 8px solid black; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+
+        &__menu-toggle {
+            background-color: white;
+            height: 3.5rem;
+            width: 3.5rem;
+        }
+
+        &__logo--image {
+            height: 3.5rem;
+        }
+    }
+
+    .stage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        /* border: 8px solid black; */
+        flex-grow: 2;
+
+        .headline {
+            /* border: 8px solid black; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
+            color: white;
+            margin-top: 8rem;
+            margin-bottom: 1.6rem;
+            text-transform: uppercase;
+
+            &--main {
+                font-weight: 400;
+                font-size: 5.8rem;
+                letter-spacing: .6em;
+                text-indent: .6em;
+                
+                animation: moveInFromLeft 2s;
+                animation-timing-function: ease-in-out;
+            }
+            
+            &--sub {
+                font-weight: 400;
+                font-size: 1.9rem;
+                letter-spacing: .9em;
+                text-indent: .9em;
+            
+                animation: moveInFromRight 2s;
+                animation-timing-function: ease-in-out;
+            }
+        }
+    }
+    
+
+}
+
+/* .wrapper__container {
+    border: 8px solid black;
+    filter: drop-shadow(
+    0 .2rem .2rem rgba(0, 0, 0, .4)
+    );
+} */

@@ -51,14 +51,14 @@
 .container {
     .stage {
         .btn__discover--green {
-            background-color: #85f118bb;
+            background-color: rgba($color-button-discover-green, 0.7);
             color:white;
             font-weight: 300;
             font-size: 1.4rem;
         }
         
         .btn__discover--green::after {
-            background-color: #85f118bb;
+            background-color: rgba($color-button-discover-green, 0.7);
         }
     }
 }

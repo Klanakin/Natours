@@ -51,14 +51,45 @@
 .container {
     .stage {
         .btn__discover--green {
-            background-color: rgba($color-button-discover-green, 0.7);
+            background-color: rgba($color-highlight-green, 0.7);
             color:white;
             font-weight: 300;
-            font-size: 1.4rem;
+            font-size: $font-size-m;
         }
         
         .btn__discover--green::after {
-            background-color: rgba($color-button-discover-green, 0.7);
+            background-color: rgba($color-highlight-green, 0.7);
         }
+    }
+}
+
+.btn__discover-more--green {
+    font-size: $font-size-m;
+
+    &:link,
+    &:visited {
+        border-bottom: .1rem dotted $color-primary;
+        border-left: .5rem double $color-highlight-green;
+        color: $color-primary;
+        display: inline-block;
+        text-decoration: none;
+        padding: .4rem;
+        transition: all .4s;
+    }
+
+    &:hover {
+        border: none;
+        background-image: linear-gradient(to right, $color-highlight-green, $color-primary);
+        color: $color-white;
+        box-shadow: .2rem .2rem .4rem rgba(0, 0, 0, 0.2);
+        transform: translateX(.8rem);
+    }
+
+    &:active {
+        background-image: linear-gradient(to left, $color-highlight-green, $color-primary);
+        box-shadow: -.2rem .2rem .2rem rgba(0, 0, 0, 0.2);
+        color: $color-white;
+        transform: translateX(1.5rem);
+        transition: all .2s;
     }
 }

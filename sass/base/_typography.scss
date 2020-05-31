@@ -21,3 +21,38 @@ body {
         margin-bottom: 3rem;
     }
 }
+
+.heading-secondary {
+    display: inline-block;
+
+    background-image: 
+        linear-gradient(
+            90deg,
+            $color-primary-light,
+            $color-primary-dark
+        );
+    color: transparent;
+    font-weight: 700;
+    font-size: 3.5rem;
+    letter-spacing: .2rem;
+    text-indent: .2rem;
+    text-transform: uppercase;
+    transition: all .2s;
+
+    -webkit-background-clip: text;
+
+    &:hover {
+        background-image: 
+        linear-gradient(
+            90deg,
+            $color-primary-light,
+            $color-primary-dark
+        );
+        color: white;
+        padding: 1.5rem;
+        transform: scaleY(1.1) skewX(2deg) skewY(-4deg);
+        text-shadow: .4rem .4rem .2rem rgba(0, 0, 0, .3);
+
+        -webkit-background-clip: unset;
+    }
+}

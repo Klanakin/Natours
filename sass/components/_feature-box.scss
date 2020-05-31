@@ -1,0 +1,42 @@
+.feature-box {
+    background-color: rgba($color-white, 0.8);
+    font-size: $font-size-m;
+    padding: 3rem 2rem;
+    text-align: center;
+    transition: all .3s;
+    overflow: hidden;
+
+    a {
+        color: inherit;
+        font-size: inherit;
+        text-decoration: none;
+    }
+
+    &__layout--flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 35vh;
+    }
+
+    &__icon {
+        color: transparent;
+        font-size: 4rem;
+        background-image: linear-gradient(
+            to right,
+            $color-highlight-green,
+            $color-secondary
+        );
+        padding: .2rem;
+        -webkit-background-clip: text;
+    }
+
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.05);
+    }
+
+    &__text {
+
+    }
+}
